@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Hello World",
-  description: "A minimal Hello World Next.js page",
+  title: "Bleach Questions FR",
+  description: "Toutes les réponses aux questions sur Bleach en français !",
 };
 
 export default function RootLayout({ children }) {

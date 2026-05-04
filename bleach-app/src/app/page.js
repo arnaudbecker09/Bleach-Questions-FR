@@ -1,3 +1,18 @@
-export default function Home() {
-  return <h1>Hello world</h1>;
+import { supabase } from "@/lib/supabase";
+
+export default async function Home() {
+  const { data, error } = await supabase
+    .from("questions")
+    .select("*")
+    .limit(5);
+
+  return (
+    <div style={{ padding: 20 }}>
+      <h1>Test Supabase</h1>
+
+      {error && <p style={{ color: "red" }}>{error.message}</p>}
+
+      <pre>{JSON.stringify(data, null, 2)}</pre>
+    </div>
+  );
 }
