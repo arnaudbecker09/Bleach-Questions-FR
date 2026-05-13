@@ -44,6 +44,14 @@ const RootLayout = ({ children }) => {
         <main className="max-w-4xl mx-auto px-4 py-12">
           {children}
         </main>
+
+        <footer className="mt-16 border-t border-zinc-600 bg-zinc-300 py-10">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <p className="text-[10px] uppercase tracking-[0.3em] text-zinc-700">
+              © Tite Kubo / Shueisha / Klub Outside
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   );
