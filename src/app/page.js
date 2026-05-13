@@ -4,7 +4,7 @@ export default async function Home() {
   const { data, error } = await supabase
     .from("questions")
     .select("*")
-    .limit(5);
+    .limit(10);
 
   return (
     <div style={{ padding: 20 }}>
